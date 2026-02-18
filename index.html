@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kova — The trust layer for the agent economy</title>
+  <meta name="description" content="A protocol that makes honesty the only rational strategy for any autonomous system. Carved in stone. Verified in code.">
+  <meta property="og:title" content="Kova — The trust layer for the agent economy">
+  <meta property="og:description" content="Honesty as the only rational strategy. Verifiable commitments for every AI agent. Open source.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kovaprotocol.com/images/kova-logo.png">
+  <meta property="og:url" content="https://kovaprotocol.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kova — The trust layer for the agent economy">
+  <meta name="twitter:description" content="Verifiable commitments for every AI agent. Open source.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/kova-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header" data-animate="header">
+    <div class="header__top">
+      <a href="index.html" class="header__logo" data-magnetic aria-label="Kova home"><img src="images/kova-logo.png" alt="Kova" class="header__logo-img"></a>
+      <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+    <nav class="header__nav" aria-label="Main">
+      <button type="button" class="nav-close" aria-label="Close menu">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="header__links">
+        <a href="#problem">What is Kova</a>
+        <a href="#trust">Trust System</a>
+        <a href="#manifesto">Why it matters</a>
+        <a href="#regulatory">Compliance</a>
+        <a href="#adoption">Adoption</a>
+        <a href="docs/quickstart.html">Guides</a>
+        <a href="https://github.com/agbusiness195/stele" rel="noopener noreferrer">Code &amp; Spec</a>
+      </div>
+      <a href="#get-started" class="header__cta">Get started</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="hero__video-wrap" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto" src="videos/hero.mp4"></video>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__badge" data-reveal>Free · Open source</p>
+        <h1 class="hero__title">
+          <span class="hero__line" data-split="words">Trust for AI agents</span>
+          <span class="hero__line hero__line--accent" data-split="words">that anyone can verify</span>
+        </h1>
+        <p class="hero__stats-desc" data-reveal>AI agents that book flights, manage money, and make decisions need to prove they do what they promise. Kova makes that possible — for developers, enterprises, and regulators.</p>
+        <p class="hero__social-proof" data-reveal>Join developers building the trust layer for the agent economy</p>
+        <div class="hero__stats-grid" data-reveal>
+          <div class="hero__stat"><span class="hero__stat-val" id="hero-github-stars">—</span><span class="hero__stat-lbl">Community</span></div>
+          <div class="hero__stat"><span class="hero__stat-val" id="hero-npm-downloads">—</span><span class="hero__stat-lbl">Downloads</span></div>
+          <div class="hero__stat"><span class="hero__stat-val">MIT</span><span class="hero__stat-lbl">Free to use</span></div>
+          <div class="hero__stat"><span class="hero__stat-val">EU</span><span class="hero__stat-lbl">Compliance ready</span></div>
+        </div>
+        <div class="hero__cta hero__cta-buttons">
+          <a href="#get-started" class="btn btn--primary">Get started</a>
+          <a href="#problem" class="btn btn--ghost">Learn how it works</a>
+        </div>
+        <p class="hero__help-note" data-reveal>New here? Click the <strong>?</strong> in the corner to ask any question — we'll explain in plain language.</p>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="hero__scroll-dash"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <div class="section-buffer" aria-hidden="true"></div>
+
+    <section class="section section--problem section--bg" id="problem" data-section="problem" style="--bg-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1920&q=80')">
+      <div class="section__bg" aria-hidden="true"></div>
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>THE PROBLEM</p>
+      <h2 class="problem__title" data-reveal>AI agents that no one can verify</h2>
+      <div class="problem__content" data-reveal>
+        <p>AI agents will manage money, make decisions, and sign contracts — but today there's no way to prove they do what they promise. No accountability. No trust. Every day without verifiable covenants is a day of unaccountable risk. Kova fixes that.</p>
+      </div>
+      <div class="problem__stats" data-reveal>
+        <div class="problem__stat"><span class="problem__stat-val" id="github-stars">—</span><span class="problem__stat-lbl">Community</span></div>
+        <div class="problem__stat"><span class="problem__stat-val" id="npm-downloads">—</span><span class="problem__stat-lbl">Downloads</span></div>
+        <div class="problem__stat"><span class="problem__stat-val">Aug 2026</span><span class="problem__stat-lbl">EU AI Act compliance deadline</span></div>
+      </div>
+      <a href="manifesto.html" class="section__cta section__cta--problem" data-reveal rel="noopener noreferrer">Read the manifesto →</a>
+      </div>
+    </section>
+
+    <div class="section-buffer" aria-hidden="true"></div>
+
+    <section class="section section--protocol" data-section="protocol">
+      <p class="section__label section__label--center" data-reveal>HOW IT WORKS</p>
+      <p class="protocol__subtitle" data-reveal>Declare · Monitor · Prove</p>
+      <div class="protocol-flow">
+        <article class="protocol__card protocol__card--1" data-reveal>
+          <span class="protocol__num">01</span>
+          <h3>Declare</h3>
+          <p>Agents state what they will and won't do. These rules are locked in and can't be changed to allow more.</p>
+        </article>
+        <article class="protocol__card protocol__card--2 protocol__card--up" data-reveal>
+          <span class="protocol__num">02</span>
+          <h3>Monitor</h3>
+          <p>Kova watches what agents do. If they break the rules, it stops them or records the violation.</p>
+        </article>
+        <article class="protocol__card protocol__card--3" data-reveal>
+          <span class="protocol__num">03</span>
+          <h3>Prove</h3>
+          <p>Anyone can verify an agent followed the rules — without seeing how it works. Privacy preserved.</p>
+        </article>
+      </div>
+      <a href="https://github.com/agbusiness195/stele/blob/main/SPEC.md" class="section__cta" data-reveal rel="noopener noreferrer">Read the full spec →</a>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section class="section section--code section--bg" data-section="code" style="--bg-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&q=80')">
+      <div class="section__bg section__bg--lighter" aria-hidden="true"></div>
+      <div class="section__content">
+      <p class="section__label" data-reveal>FOR DEVELOPERS</p>
+      <h2 class="code__title" data-reveal>Add accountability in two lines</h2>
+      <p class="code__intro" data-reveal>If you build AI agents, add Kova to make them verifiable. Everyone else: Kova lets you verify agents do what they promise — no coding required. See the <a href="#regulatory">Compliance</a> section or <a href="eu-ai-act.html">EU AI Act guide</a>.</p>
+      <div class="code-block code-block--wide" data-reveal>
+        <span class="code-block__lang">TYPESCRIPT</span>
+        <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
+        <pre><code><span class="token-key">import</span> { Kova } <span class="token-key">from</span> <span class="token-str">'@kova/core'</span>;
+
+<span class="token-key">const</span> agent = <span class="token-key">await</span> Kova.bind(myAgent, {
+  covenants: [<span class="token-str">'no-data-exfiltration'</span>, <span class="token-str">'budget-cap:1000'</span>],
+  enforcement: <span class="token-str">'hard'</span>,
+  proof: <span class="token-str">'zk'</span>
+});
+
+<span class="token-key">const</span> proof = <span class="token-key">await</span> agent.verify();</code></pre>
+        <div class="code-block__footer">
+          <button type="button" class="npm-copy" data-copy="npm install @kova/core" aria-label="Copy npm command">npm install @kova/core</button>
+          <span class="code-block__meta">MIT Licensed</span>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--architecture section--alt" data-section="architecture">
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>BUILT FOR TRUST</p>
+      <div class="architecture-grid" data-reveal>
+        <article class="architecture__card">
+          <h4>Who owns this agent?</h4>
+          <p>Every agent is linked to its owner. You can trace who's responsible.</p>
+        </article>
+        <article class="architecture__card">
+          <h4>What will it do?</h4>
+          <p>Agents declare their rules upfront. They can only get stricter, never looser.</p>
+        </article>
+        <article class="architecture__card">
+          <h4>Can we verify it?</h4>
+          <p>Yes. Third parties can verify compliance without seeing how the agent works.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--trust section--alt" id="trust" data-section="trust">
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>TRUST SYSTEM</p>
+      <h2 class="trust__title" data-reveal>Trust is mathematics, <em>not reputation</em></h2>
+      <p class="trust__intro" data-reveal>Kova doesn't guess — it calculates. Trust is bounded by collateralization: an agent's trust can never exceed its staked value. Formal trust algebra enables composition, intersection, negation, and tensor operations across trust profiles. Five-dimensional scoring replaces crude single-number ratings. Adversarial trust equilibrium ensures the system converges on evolutionarily stable strategies — not just Nash equilibria that collapse under pressure. Trust entanglement enables sublinear network verification: verify one node, constrain thousands.</p>
+      <div class="trust-grid" data-reveal>
+        <div class="trust__cell"><span class="trust__val">T ≤ S</span><span class="trust__lbl">Trust ≤ Staked Value</span></div>
+        <div class="trust__cell"><span class="trust__val">5D</span><span class="trust__lbl">Multidimensional Profile</span></div>
+        <div class="trust__cell"><span class="trust__val">ESS</span><span class="trust__lbl">Adversarial Equilibrium</span></div>
+        <div class="trust__cell"><span class="trust__val">O(√n)</span><span class="trust__lbl">Sublinear Verification</span></div>
+        <div class="trust__cell"><span class="trust__val">⊗</span><span class="trust__lbl">Trust Tensor Operations</span></div>
+        <div class="trust__cell"><span class="trust__val">∩ ∪ ¬</span><span class="trust__lbl">Composition Algebra</span></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--kernel section--alt" data-section="kernel">
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>CORE GUARANTEE</p>
+      <h2 class="kernel__title" data-reveal>The accountability <em>kernel</em></h2>
+      <p class="kernel__intro" data-reveal>Four components. One invariant. The kernel is the minimal verifiable core: identity, covenant, proof, and accounting. If the kernel is correct, the entire system maintains its guarantees — regardless of what's built on top. Everything else is optional. The kernel is not.</p>
+      </div>
+    </section>
+
+    <section class="section section--economics" data-section="economics">
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>ECONOMICS</p>
+      <h2 class="economics__title" data-reveal>Trust and verification built in</h2>
+      <p class="economics__intro" data-reveal>Kova is free and open. Value flows with the economy it secures.</p>
+      <p class="section__label section__label--center" data-reveal style="margin-top: 3rem;">Beyond The Rail</p>
+      <div class="economics__revenue-grid" data-reveal>
+        <div class="economics__revenue-row"><span class="economics__revenue-stream">Trust Futures</span><span class="economics__revenue-model">Financial instruments on trust trajectories (CME Group model)</span><span class="economics__revenue-scale">Derivatives market</span></div>
+        <div class="economics__revenue-row"><span class="economics__revenue-stream">Compliance Autopilot</span><span class="economics__revenue-model">0.5–1% of operational budget, continuous monitoring</span><span class="economics__revenue-scale">Per-agent recurring</span></div>
+        <div class="economics__revenue-row"><span class="economics__revenue-stream">Certification Authority</span><span class="economics__revenue-model">$10K–$100K/year per agent class</span><span class="economics__revenue-scale">Enterprise licensing</span></div>
+        <div class="economics__revenue-row"><span class="economics__revenue-stream">Trust Data Monopoly</span><span class="economics__revenue-model">Bloomberg model for behavioral insights</span><span class="economics__revenue-scale">Data-as-a-service</span></div>
+        <div class="economics__revenue-row"><span class="economics__revenue-stream">Stake Pool Yield</span><span class="economics__revenue-model">Collateral interest at billion-agent scale</span><span class="economics__revenue-scale">$7.5B/year</span></div>
+        <div class="economics__revenue-row"><span class="economics__revenue-stream">Sovereign Licensing</span><span class="economics__revenue-model">National-level deployment licensing</span><span class="economics__revenue-scale">$10–100M per country</span></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--stats" data-section="stats">
+      <p class="section__label section__label--center" data-reveal>PROPERTIES</p>
+      <div class="stats stats--kova" data-reveal>
+        <div class="stat"><span class="stat__val" id="stats-github-stars">—</span><span class="stat__lbl">Community</span></div>
+        <div class="stat"><span class="stat__val" id="stats-npm-downloads">—</span><span class="stat__lbl">Downloads</span></div>
+        <div class="stat"><span class="stat__val">Private</span><span class="stat__lbl">Verification</span></div>
+        <div class="stat"><span class="stat__val">MIT</span><span class="stat__lbl">Free to use</span></div>
+      </div>
+    </section>
+
+    <div class="section-buffer" aria-hidden="true"></div>
+
+    <section class="section section--eu section--regulatory section--bg" id="regulatory" data-section="eu" style="--bg-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80')">
+      <div class="section__bg" aria-hidden="true"></div>
+      <div class="section__content">
+      <p class="section__label" data-reveal>REGULATORY</p>
+      <h2 class="eu__title" data-reveal>EU AI Act · Aug 2026</h2>
+      <div class="eu-countdown" data-reveal>
+        <span class="eu-countdown__date">Aug 2026</span>
+        <span class="eu-countdown__event">FULL ENFORCEMENT</span>
+        <span class="eu-countdown__timer" id="eu-countdown">164 days remaining</span>
+      </div>
+      <div class="eu-content" data-reveal>
+        <p>By August 2026, Europe requires AI systems to be transparent and accountable. Kova maps to identity, rules, audit trails, and third-party verification. <a href="eu-ai-act.html">See how Kova meets EU AI Act requirements →</a></p>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--adoption section--alt" id="adoption" data-section="adoption">
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>ADOPTION</p>
+      <h2 class="adoption__title" data-reveal>Three wedges that work <em>without network effects</em></h2>
+      <div class="adoption-grid" data-reveal>
+        <article class="adoption__card">
+          <h4>Regulatory Wedge</h4>
+          <p>EU AI Act compliance. August 2026 deadline creates forced adoption. Enterprises need behavioral transparency and audit trails for autonomous agents. Kova is the compliance layer.</p>
+        </article>
+        <article class="adoption__card">
+          <h4>Internal Governance Wedge</h4>
+          <p>Enterprise fleet management. Companies don't need a network to use Kova internally. Deploy covenants across your own agent infrastructure. Value from day one, zero external dependencies.</p>
+        </article>
+        <article class="adoption__card">
+          <h4>MCP Certification Wedge</h4>
+          <p>Model Context Protocol trust layer. As MCP becomes the standard for agent-to-tool communication, Kova becomes the certification layer that verifies agent identity and behavioral compliance within the ecosystem.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--why section--alt" data-section="why">
+      <div class="section__content">
+      <p class="section__label section__label--center" data-reveal>WHY KOVA</p>
+      <h2 class="why__title" data-reveal>Neutral. Cross-platform. Open.</h2>
+      <p class="why__intro" data-reveal>Other solutions are tied to one company, one blockchain, or one use case. Kova works everywhere. Free to use. Anyone can verify.</p>
+      <div class="why__differentiators" data-reveal>
+        <div class="why__diff"><span class="why__diff-label">Neutral</span><span class="why__diff-desc">No vendor lock-in. No single chain or platform.</span></div>
+        <div class="why__diff"><span class="why__diff-label">Cross-platform</span><span class="why__diff-desc">Works with any agent, any protocol, any stack.</span></div>
+        <div class="why__diff"><span class="why__diff-label">Open</span><span class="why__diff-desc">MIT licensed. Anyone can verify. Anyone can build.</span></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--manifesto" id="manifesto" data-section="manifesto">
+      <div class="section__content">
+      <div class="manifesto__block" data-reveal>
+        <blockquote class="manifesto">"If we can't hold AI agents accountable, we can't trust them. If we can't trust them, they can't participate in the economy. The question is whether we build accountability before or after the first catastrophic failure."</blockquote>
+        <cite class="manifesto__cite">— THE KOVA MANIFESTO</cite>
+        <a href="manifesto.html" class="manifesto__link" rel="noopener noreferrer">Read the manifesto →</a>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--get-started" id="get-started" data-section="get-started">
+      <p class="section__label section__label--center" data-reveal>GET STARTED</p>
+      <div class="get-started__grid" data-reveal>
+        <div class="get-started__card">
+          <h4>I'm new to Kova</h4>
+          <h3>Learn first</h3>
+          <p>Read the manifesto or see how it works. No coding required.</p>
+          <a href="manifesto.html" class="btn btn--ghost btn--small" rel="noopener noreferrer">Read the manifesto →</a>
+        </div>
+        <div class="get-started__card">
+          <h4>I'm a compliance officer</h4>
+          <h3>EU AI Act</h3>
+          <p>See how Kova maps to regulatory requirements. Plain language.</p>
+          <a href="eu-ai-act.html" class="btn btn--ghost btn--small" rel="noopener noreferrer">Compliance guide →</a>
+        </div>
+        <div class="get-started__card">
+          <h4>I'm a developer</h4>
+          <h3>Build with Kova</h3>
+          <p>Install the SDK. Add accountability in minutes. MIT licensed.</p>
+          <a href="docs/quickstart.html" class="btn btn--ghost btn--small">Quickstart →</a>
+        </div>
+        <div class="get-started__card">
+          <h4>Enterprise or compliance support</h4>
+          <h3>Get in touch</h3>
+          <p>Integration help, EU AI Act mapping, or custom deployment. We'll respond within 48 hours.</p>
+          <a href="https://github.com/agbusiness195/stele/discussions" class="btn btn--ghost btn--small" rel="noopener noreferrer">GitHub Discussions →</a>
+        </div>
+      </div>
+      <div class="get-started__cta" data-reveal>
+        <p class="get-started__cta-sub">Free. Open source. Anyone can verify.</p>
+        <div class="get-started__cta-buttons">
+          <a href="manifesto.html" class="btn btn--primary">Read the manifesto</a>
+          <a href="https://github.com/agbusiness195/stele" class="btn btn--ghost" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-section="footer">
+    <div class="footer__brand">
+      <h3 class="footer__logo">KOVA</h3>
+    </div>
+    <nav class="footer__nav">
+      <a href="https://github.com/agbusiness195/stele" rel="noopener noreferrer">GITHUB</a>
+      <a href="https://github.com/agbusiness195/stele/blob/main/SPEC.md" rel="noopener noreferrer">SPEC</a>
+      <a href="https://github.com/agbusiness195/stele/discussions" rel="noopener noreferrer">COMMUNITY</a>
+      <a href="manifesto.html">MANIFESTO</a>
+      <a href="eu-ai-act.html">EU AI ACT</a>
+    </nav>
+  </footer>
+
+  <div class="scroll-bar" aria-hidden="true"></div>
+
+  <!-- AI Help — corner widget for clarification and depth -->
+  <button type="button" class="help-widget__toggle" id="help-toggle" aria-label="Get help understanding Kova" aria-expanded="false">
+    <span class="help-widget__icon" aria-hidden="true">?</span>
+  </button>
+  <div class="help-widget__panel" id="help-panel" aria-hidden="true">
+    <div class="help-widget__header">
+      <h3>Need help?</h3>
+      <button type="button" class="help-widget__close" id="help-close" aria-label="Close help">×</button>
+    </div>
+    <p class="help-widget__intro">Not sure where to start? Ask any question. We'll answer in plain language — no jargon.</p>
+    <div class="help-widget__links">
+      <a href="#problem">What is Kova</a>
+      <a href="#trust">Trust System</a>
+      <a href="#manifesto">Why it matters</a>
+      <a href="#regulatory">EU compliance</a>
+      <a href="#adoption">Adoption</a>
+      <a href="manifesto.html">Manifesto</a>
+    </div>
+    <div class="help-widget__chat">
+      <div class="help-widget__messages" id="help-messages"></div>
+      <div class="help-widget__input-wrap">
+        <input type="text" id="help-query" placeholder="e.g. What is Kova, in simple terms?" autocomplete="off">
+        <button type="button" class="help-widget__ask" id="help-ask" aria-label="Send">→</button>
+      </div>
+      <p class="help-widget__hint" id="help-hint">Type your question and press Enter</p>
+    </div>
+  </div>
+
+  <script>
+    if (location.protocol === 'file:' || (location.port && location.port !== '3333')) {
+      window.KOVA_API_URL = 'http://localhost:3333/api/chat';
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>

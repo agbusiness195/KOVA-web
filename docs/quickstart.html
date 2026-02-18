@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickstart — Kova</title>
+  <meta name="description" content="Add trust to any MCP server in two lines.">
+  <meta property="og:title" content="Quickstart — Kova">
+  <meta property="og:description" content="Add trust to any MCP server in two lines.">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .quickstart-page { max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem; }
+    .quickstart-page h1 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 1rem; }
+    .quickstart-page p { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
+    .quickstart-page .code-block { margin: 2rem 0; }
+    .quickstart-page .quickstart__links { margin-top: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header" data-animate="header">
+    <div class="header__top">
+      <a href="../index.html" class="header__logo" aria-label="Kova home"><img src="../images/kova-logo.png" alt="Kova" class="header__logo-img"></a>
+      <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+    <nav class="header__nav" aria-label="Main">
+      <button type="button" class="nav-close" aria-label="Close menu">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="header__links">
+        <a href="../index.html#problem">What is Kova</a>
+        <a href="../index.html#manifesto">Why it matters</a>
+        <a href="../index.html#regulatory">Compliance</a>
+        <a href="quickstart.html">Guides</a>
+        <a href="https://github.com/agbusiness195/stele" rel="noopener noreferrer">Code &amp; Spec</a>
+      </div>
+      <a href="../index.html#get-started" class="header__cta">Get started</a>
+    </nav>
+  </header>
+
+  <main class="quickstart-page" id="main">
+    <h1>Quickstart</h1>
+    <p>Add accountability to your AI agent in two lines. Every action is monitored and verifiable.</p>
+    <div class="code-block">
+      <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
+      <pre><code><span class="token-key">import</span> { withKova } <span class="token-key">from</span> <span class="token-str">'@kova/core'</span>;
+
+<span class="token-key">const</span> server = withKova(yourMCPServer, <span class="token-str">'data-isolation'</span>);</code></pre>
+    </div>
+    <p>Install: <button type="button" class="npm-copy" data-copy="npm install @kova/core" aria-label="Copy npm command">npm install @kova/core</button></p>
+    <div class="quickstart__links">
+      <a href="https://github.com/agbusiness195/stele#quickstart" class="section__cta" rel="noopener noreferrer">View on GitHub →</a>
+      <a href="../index.html" class="section__cta">← Back to Kova</a>
+    </div>
+  </main>
+
+  <!-- AI Help widget -->
+  <button type="button" class="help-widget__toggle" id="help-toggle" aria-label="Get help understanding Kova" aria-expanded="false"><span class="help-widget__icon" aria-hidden="true">?</span></button>
+  <div class="help-widget__panel" id="help-panel" aria-hidden="true">
+    <div class="help-widget__header"><h3>Need help?</h3><button type="button" class="help-widget__close" id="help-close" aria-label="Close help">×</button></div>
+    <p class="help-widget__intro">Not sure where to start? Ask any question. We'll answer in plain language — no jargon.</p>
+    <div class="help-widget__links">
+      <a href="../index.html#problem">What is Kova</a>
+      <a href="../index.html#manifesto">Why it matters</a>
+      <a href="../eu-ai-act.html">EU compliance</a>
+      <a href="../index.html">Home</a>
+    </div>
+    <div class="help-widget__chat">
+      <div class="help-widget__messages" id="help-messages"></div>
+      <div class="help-widget__input-wrap">
+        <input type="text" id="help-query" placeholder="e.g. What is Kova, in simple terms?" autocomplete="off">
+        <button type="button" class="help-widget__ask" id="help-ask" aria-label="Send">→</button>
+      </div>
+      <p class="help-widget__hint" id="help-hint">Type your question and press Enter</p>
+    </div>
+  </div>
+
+  <script>if (location.protocol === 'file:' || (location.port && location.port !== '3333')) { window.KOVA_API_URL = 'http://localhost:3333/api/chat'; }</script>
+  <script src="../main.js"></script>
+</body>
+</html>
