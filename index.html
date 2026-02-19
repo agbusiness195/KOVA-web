@@ -136,20 +136,21 @@
       <div class="section__bg section__bg--lighter" aria-hidden="true"></div>
       <div class="section__content">
       <p class="section__label" data-reveal>FOR DEVELOPERS</p>
-      <h2 class="code__title" data-reveal>Add accountability in two lines</h2>
+      <h2 class="code__title" data-reveal>Add accountability in minutes</h2>
       <p class="code__intro" data-reveal>If you build AI agents, add KOVA to make them verifiable. Everyone else: KOVA lets you verify agents do what they promise — no coding required. See the <a href="#regulatory">Compliance</a> section or <a href="eu-ai-act.html">EU AI Act guide</a>.</p>
       <div class="code-block code-block--wide" data-reveal>
         <span class="code-block__lang">TYPESCRIPT</span>
         <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
-        <pre><code><span class="token-key">import</span> { Kova } <span class="token-key">from</span> <span class="token-str">'@usekova/core'</span>;
+        <pre><code><span class="token-key">import</span> { buildCovenant, verifyCovenant } <span class="token-key">from</span> <span class="token-str">'@usekova/core'</span>;
 
-<span class="token-key">const</span> agent = <span class="token-key">await</span> Kova.bind(myAgent, {
-  covenants: [<span class="token-str">'no-data-exfiltration'</span>, <span class="token-str">'budget-cap:1000'</span>],
-  enforcement: <span class="token-str">'hard'</span>,
-  proof: <span class="token-str">'zk'</span>
+<span class="token-key">const</span> covenant = <span class="token-key">await</span> buildCovenant({
+  issuer:      { id: <span class="token-str">'agent-001'</span>, publicKey: pubKey, role: <span class="token-str">'issuer'</span> },
+  beneficiary: { id: <span class="token-str">'user-042'</span>,  publicKey: userKey, role: <span class="token-str">'beneficiary'</span> },
+  constraints: <span class="token-str">"forbid transfer over 1000; forbid access on '/private/**'"</span>,
+  privateKey:  signingKey
 });
 
-<span class="token-key">const</span> proof = <span class="token-key">await</span> agent.verify();</code></pre>
+<span class="token-key">const</span> valid = verifyCovenant(covenant);</code></pre>
         <div class="code-block__footer">
           <button type="button" class="npm-copy" data-copy="npm install @usekova/core" aria-label="Copy npm command">npm install @usekova/core</button>
           <span class="code-block__meta">MIT Licensed</span>

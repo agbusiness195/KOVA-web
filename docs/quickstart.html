@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quickstart — Kova</title>
-  <meta name="description" content="Add trust to any MCP server in two lines.">
+  <meta name="description" content="Add trust to any MCP server in minutes.">
   <meta property="og:title" content="Quickstart — Kova">
-  <meta property="og:description" content="Add trust to any MCP server in two lines.">
+  <meta property="og:description" content="Add trust to any MCP server in minutes.">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/png" href="/icon.png">
   <link rel="apple-touch-icon" href="/images/kova-favicon.png">
@@ -53,12 +53,19 @@
   <main class="quickstart-page" id="main">
     <h1>Quickstart</h1>
     <p class="quickstart-page__soon">SDK live on npm.</p>
-    <p>Add accountability to your AI agent in two lines. Every action is monitored and verifiable.</p>
+    <p>Add accountability to your AI agent in minutes. Every action is monitored and verifiable.</p>
     <div class="code-block">
       <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
-      <pre><code><span class="token-key">import</span> { withKova } <span class="token-key">from</span> <span class="token-str">'@usekova/core'</span>;
+      <pre><code>import { buildCovenant, verifyCovenant } from '@usekova/core';
 
-<span class="token-key">const</span> server = withKova(yourMCPServer, <span class="token-str">'data-isolation'</span>);</code></pre>
+const covenant = await buildCovenant({
+  issuer:      { id: 'agent-001', publicKey: pubKey, role: 'issuer' },
+  beneficiary: { id: 'user-042',  publicKey: userKey, role: 'beneficiary' },
+  constraints: "forbid transfer over 1000; forbid access on '/private/**'",
+  privateKey:  signingKey
+});
+
+const valid = verifyCovenant(covenant);</code></pre>
     </div>
     <p>Install: <button type="button" class="npm-copy" data-copy="npm install @usekova/core" aria-label="Copy npm command">npm install @usekova/core</button></p>
     <div class="quickstart__links">
