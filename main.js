@@ -95,20 +95,31 @@
     });
   });
 
-  /* ——— Newsletter form (placeholder until backend wired) ——— */
-  const newsletterForm = document.querySelector('.footer__form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const input = newsletterForm.querySelector('input[type="email"]');
-      const btn = newsletterForm.querySelector('button[type="submit"]');
-      if (input && btn) {
-        btn.textContent = 'Thanks!';
-        btn.disabled = true;
-        input.disabled = true;
-      }
+  /* ——— Live stats (GitHub stars, npm downloads) ——— */
+  const GITHUB_REPO = 'agbusiness195/stele';
+  const NPM_PACKAGE = '@usekova/core';
+
+  function formatNum(n) {
+    if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
+    return String(n);
+  }
+
+  function setLiveStats(stars, downloads) {
+    const starEls = document.querySelectorAll('#hero-github-stars, #github-stars, #stats-github-stars');
+    const dlEls = document.querySelectorAll('#hero-npm-downloads, #npm-downloads, #stats-npm-downloads');
+    starEls.forEach((el) => {
+      if (el) el.textContent = stars != null ? formatNum(stars) : 'Open Source';
+    });
+    dlEls.forEach((el) => {
+      if (el) el.textContent = downloads != null ? formatNum(downloads) : 'MIT Licensed';
     });
   }
+
+  Promise.all([
+    fetch(`https://api.github.com/repos/${GITHUB_REPO}`).then((r) => r.json()).then((d) => d.stargazers_count).catch(() => null),
+    fetch(`https://api.npmjs.org/downloads/point/last-week/${encodeURIComponent(NPM_PACKAGE)}`).then((r) => r.json()).then((d) => d.downloads).catch(() => null)
+  ]).then(([stars, downloads]) => setLiveStats(stars, downloads));
 
   /* ——— Help widget (AI assistance) ——— */
   const helpToggle = document.getElementById('help-toggle');

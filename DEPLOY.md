@@ -26,7 +26,7 @@ Without this, the AI help chat (?) will show fallback links instead of answering
 
 ### 2. Domain (optional)
 
-If using a custom domain (e.g. `kovaprotocol.com`):
+If using a custom domain (e.g. `usekova.dev`):
 
 1. Add domain in Vercel → Project → Settings → Domains
 2. Update these files with your domain:

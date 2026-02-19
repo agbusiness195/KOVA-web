@@ -2690,9 +2690,14 @@ main {
   opacity: 0.95;
 }
 
-.footer__newsletter {
+.footer__newsletter,
+.footer__cta-block {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.footer__cta-block .footer__subscribe {
+  margin-bottom: 0.5rem;
 }
 
 .footer__form {

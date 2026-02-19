@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'messages array required' });
   }
 
-  const systemPrompt = `You are a helpful assistant for Kova (kovaprotocol.com), the trust layer for the agent economy. Kova lets AI agents declare what they will do, monitors their behavior, and lets anyone verify compliance without seeing how the agent works.
+  const systemPrompt = `You are a helpful assistant for Kova (usekova.dev), the trust layer for the agent economy. Kova lets AI agents declare what they will do, monitors their behavior, and lets anyone verify compliance without seeing how the agent works.
 
 Key facts about Kova:
 - Free, open source, MIT licensed

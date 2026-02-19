@@ -83,7 +83,7 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 
 ### 11. Enterprise contact feels informal
 - **Location:** Get Started section — "We'll respond within 48 hours" links to GitHub Discussions
-- **Suggestion:** Add a dedicated enterprise contact (e.g. `enterprise@kovaprotocol.com` or a Calendly link) for a more professional feel
+- **Suggestion:** Add a dedicated enterprise contact (e.g. `enterprise@usekova.dev` or a Calendly link) for a more professional feel
 
 ### 12. No Twitter/X link
 - **Issue:** No social link to Kova's X account

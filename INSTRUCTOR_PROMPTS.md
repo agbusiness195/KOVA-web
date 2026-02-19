@@ -25,9 +25,9 @@ Use these prompts in your stele repo or with your Claude instructor for tasks th
 **Prompt to give:**
 
 > In the KOVA-web project, update these placeholders with real values:
-> - **Discord:** Search for `https://discord.gg/kovaprotocol` and replace with your actual Discord invite URL.
+> - **Discord:** Add Discord link when server exists.
 > - **X/Twitter:** Search for `https://x.com/kovaprotocol` and replace with your actual X handle URL.
-> - **Enterprise email:** Search for `enterprise@kovaprotocol.com` and replace with your real enterprise contact email (or remove the mailto link if you prefer GitHub Discussions only).
+> - **Enterprise email:** Search for `enterprise@usekova.dev` and replace if using a different address.
 
 ---
 
