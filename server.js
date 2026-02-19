@@ -97,6 +97,23 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // Serve K logo for all favicon requests (icon.png = current zoomed logo)
+  if (urlPath === '/favicon.ico' || urlPath === '/favicon.png' || urlPath === '/icon.png') {
+    const iconPath = path.join(__dirname, 'icon.png');
+    try {
+      const data = await fs.promises.readFile(iconPath);
+      res.writeHead(200, {
+        'Content-Type': 'image/png',
+        'Cache-Control': 'no-store, no-cache, must-revalidate',
+      });
+      res.end(data);
+    } catch {
+      res.writeHead(404);
+      res.end();
+    }
+    return;
+  }
+
   let filePath = req.url === '/' ? '/index.html' : req.url;
   filePath = path.join(__dirname, filePath.replace(/\?.*$/, '').replace(/^\//, ''));
   filePath = path.resolve(filePath);

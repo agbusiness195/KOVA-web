@@ -362,6 +362,12 @@ main {
   transform: translateY(0);
 }
 
+.hero__badge--soon {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
 .hero__badge.revealed,
 .hero__stats-desc.revealed,
 .hero__stats-grid.revealed,
@@ -393,6 +399,14 @@ main {
   letter-spacing: 0.04em;
   margin-bottom: 1.25rem;
   text-align: center;
+}
+
+.hero__join {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero__stats-grid {
@@ -1105,6 +1119,26 @@ main {
 .code-block:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-hover);
+}
+
+.code-block--coming-soon {
+  overflow: hidden;
+}
+
+.code-block__coming-soon {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  pointer-events: none;
 }
 
 .code-block__copy {
@@ -2054,6 +2088,14 @@ main {
   margin-bottom: 0.5rem;
 }
 
+.get-started__cta-soon {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
 .get-started__cta-sub {
   font-size: 0.875rem;
   color: var(--text-secondary);
@@ -2116,6 +2158,12 @@ main {
   color: var(--text-secondary);
   line-height: 1.65;
   margin-bottom: 1rem;
+}
+
+.get-started__card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .btn--small {
@@ -2640,6 +2688,38 @@ main {
   color: var(--text);
   margin: 0 0 1rem;
   opacity: 0.95;
+}
+
+.footer__newsletter {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer__form input[type="email"] {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  min-width: 200px;
+}
+
+.footer__form input[type="email"]::placeholder {
+  color: var(--text-muted);
+}
+
+.footer__form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--border-hover);
 }
 
 .footer__tagline {

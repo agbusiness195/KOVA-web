@@ -8,7 +8,8 @@
   <meta property="og:title" content="Quickstart — Kova">
   <meta property="og:description" content="Add trust to any MCP server in two lines.">
   <meta property="og:type" content="article">
-  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/images/kova-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -18,6 +19,7 @@
     .quickstart-page h1 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 1rem; }
     .quickstart-page p { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
     .quickstart-page .code-block { margin: 2rem 0; }
+    .quickstart-page__soon { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem !important; }
     .quickstart-page .quickstart__links { margin-top: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
   </style>
 </head>
@@ -50,14 +52,16 @@
 
   <main class="quickstart-page" id="main">
     <h1>Quickstart</h1>
+    <p class="quickstart-page__soon">SDK deploying soon.</p>
     <p>Add accountability to your AI agent in two lines. Every action is monitored and verifiable.</p>
-    <div class="code-block">
+    <div class="code-block code-block--coming-soon">
+      <span class="code-block__coming-soon">Coming soon</span>
       <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
-      <pre><code><span class="token-key">import</span> { withKova } <span class="token-key">from</span> <span class="token-str">'@kova/core'</span>;
+      <pre><code><span class="token-key">import</span> { withKova } <span class="token-key">from</span> <span class="token-str">'@usekova/core'</span>;
 
 <span class="token-key">const</span> server = withKova(yourMCPServer, <span class="token-str">'data-isolation'</span>);</code></pre>
     </div>
-    <p>Install: <button type="button" class="npm-copy" data-copy="npm install @kova/core" aria-label="Copy npm command">npm install @kova/core</button></p>
+    <p>Install: <button type="button" class="npm-copy" data-copy="npm install @usekova/core" aria-label="Copy npm command">npm install @usekova/core</button></p>
     <div class="quickstart__links">
       <a href="https://github.com/agbusiness195/stele#quickstart" class="section__cta" rel="noopener noreferrer">View on GitHub →</a>
       <a href="../index.html" class="section__cta">← Back to Kova</a>
