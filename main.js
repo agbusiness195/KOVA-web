@@ -97,7 +97,7 @@
 
   /* ——— Live stats (GitHub stars, npm downloads) ——— */
   const GITHUB_REPO = 'agbusiness195/stele';
-  const NPM_PACKAGE = '@usekova/core';
+  const NPM_PACKAGE = '@usekova/sdk';
 
   function formatNum(n) {
     if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';

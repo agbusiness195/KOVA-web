@@ -63,18 +63,14 @@
     <div class="quickstart-code-wrap">
       <div class="code-block">
         <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
-        <pre><code>import { buildCovenant, verifyCovenant } from '@usekova/core';
+        <pre><code>const { protect } = require('@usekova/sdk');
 
-const covenant = await buildCovenant({
-  issuer:      { id: 'agent-001', publicKey: pubKey, role: 'issuer' },
-  beneficiary: { id: 'user-042',  publicKey: userKey, role: 'beneficiary' },
-  constraints: "forbid transfer over 1000; forbid access on '/private/**'",
-  privateKey:  signingKey
-});
-
-const valid = verifyCovenant(covenant);</code></pre>
+const agent = await protect({
+  name: 'my-agent',
+  rules: ['no-data-leak', 'read-only']
+});</code></pre>
       </div>
-      <p>Install: <button type="button" class="npm-copy" data-copy="npm install @usekova/core" aria-label="Copy npm command">npm install @usekova/core</button></p>
+      <p>Install: <button type="button" class="npm-copy" data-copy="npm install @usekova/sdk" aria-label="Copy npm command">npm install @usekova/sdk</button></p>
     </div>
     <div class="quickstart__links">
       <a href="https://github.com/agbusiness195/stele#quickstart" class="section__cta" rel="noopener noreferrer">View on GitHub →</a>
