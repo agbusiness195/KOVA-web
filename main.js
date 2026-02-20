@@ -109,10 +109,10 @@
     const starEls = document.querySelectorAll('#hero-github-stars, #github-stars, #stats-github-stars');
     const dlEls = document.querySelectorAll('#hero-npm-downloads, #npm-downloads, #stats-npm-downloads');
     starEls.forEach((el) => {
-      if (el) el.textContent = stars != null ? formatNum(stars) : 'Open Source';
+      if (el) el.textContent = (stars != null && stars > 0) ? formatNum(stars) : 'Open Source';
     });
     dlEls.forEach((el) => {
-      if (el) el.textContent = downloads != null ? formatNum(downloads) : 'MIT Licensed';
+      if (el) el.textContent = (downloads != null && downloads > 0) ? formatNum(downloads) : 'Free';
     });
   }
 

@@ -12,15 +12,21 @@
   <link rel="apple-touch-icon" href="/images/kova-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <style>
-    .quickstart-page { max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem; }
+    body { overflow-x: hidden; }
+    .quickstart-page { max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem; font-family: var(--font-sans); overflow-x: hidden; box-sizing: border-box; width: 100%; min-width: 0; }
+    .quickstart-page * { box-sizing: border-box; }
     .quickstart-page h1 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 1rem; }
-    .quickstart-page p { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
-    .quickstart-page .code-block { margin: 2rem 0; }
+    .quickstart-page p { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; overflow-wrap: anywhere; word-break: break-word; max-width: 100%; min-width: 0; }
+    .quickstart-page .code-block { margin: 2rem 0; width: 100% !important; max-width: 100% !important; overflow-x: auto; overflow-y: hidden; min-width: 0; }
+    .quickstart-page .code-block pre { margin: 0; padding-right: 3rem; white-space: pre-wrap; word-break: break-all; overflow-wrap: anywhere; max-width: 100%; min-width: 0; width: 100%; }
+    .quickstart-page .code-block code { display: block; font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.6; word-break: break-all; overflow-wrap: anywhere; }
+    .quickstart-page .npm-copy { word-break: break-all; overflow-wrap: anywhere; max-width: 100%; }
     .quickstart-page__soon { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem !important; }
     .quickstart-page .quickstart__links { margin-top: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .quickstart-code-wrap { width: 100%; min-width: 0; overflow: hidden; }
   </style>
 </head>
 <body>
@@ -54,9 +60,10 @@
     <h1>Quickstart</h1>
     <p class="quickstart-page__soon">SDK live on npm.</p>
     <p>Add accountability to your AI agent in minutes. Every action is monitored and verifiable.</p>
-    <div class="code-block">
-      <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
-      <pre><code>import { buildCovenant, verifyCovenant } from '@usekova/core';
+    <div class="quickstart-code-wrap">
+      <div class="code-block">
+        <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
+        <pre><code>import { buildCovenant, verifyCovenant } from '@usekova/core';
 
 const covenant = await buildCovenant({
   issuer:      { id: 'agent-001', publicKey: pubKey, role: 'issuer' },
@@ -66,8 +73,9 @@ const covenant = await buildCovenant({
 });
 
 const valid = verifyCovenant(covenant);</code></pre>
+      </div>
+      <p>Install: <button type="button" class="npm-copy" data-copy="npm install @usekova/core" aria-label="Copy npm command">npm install @usekova/core</button></p>
     </div>
-    <p>Install: <button type="button" class="npm-copy" data-copy="npm install @usekova/core" aria-label="Copy npm command">npm install @usekova/core</button></p>
     <div class="quickstart__links">
       <a href="https://github.com/agbusiness195/stele#quickstart" class="section__cta" rel="noopener noreferrer">View on GitHub →</a>
       <a href="../index.html" class="section__cta">← Back to Kova</a>
