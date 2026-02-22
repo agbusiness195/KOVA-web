@@ -1,6 +1,6 @@
-# Kova videos
+# Nobulex videos
 
-Add your own company videos here. Videos should be about Kova — AI agent accountability, trust, verification, covenants, compliance.
+Add your own company videos here. Videos should be about Nobulex — AI agent accountability, trust, verification, covenants, compliance.
 
 ## Hero video
 
@@ -20,7 +20,7 @@ Drop `hero.mp4` in this folder and it will replace the default. Until then, a fa
 
 ## Content ideas
 
-Videos that fit Kova’s story:
+Videos that fit Nobulex’s story:
 - Product demos (agent binding, covenant declaration, verification)
 - Team, office, or culture
 - AI/agent workflows

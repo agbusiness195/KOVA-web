@@ -1,4 +1,4 @@
-# KOVA Website — Fixes & Upcoming Features Catalog
+# Nobulex Website — Fixes & Upcoming Features Catalog
 
 Generated from codebase analysis. Use this as a pre-launch checklist.
 
@@ -13,8 +13,8 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 ## Must fix now (broken)
 
 ### 1. Wrong npm package name in code examples
-- **Current:** `@kova/core` and `npm install @kova/core`
-- **Should be:** `@usekova/core` and `npm install @usekova/core`
+- **Current:** `@nobulex/core` and `npm install @nobulex/core`
+- **Should be:** `@nobulex/core` and `npm install @nobulex/core`
 - **Files to update:**
   - `index.html` — lines 143, 153 (code block + npm copy button)
   - `docs/quickstart.html` — lines 60, 64 (import + npm copy button)
@@ -22,7 +22,7 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 
 ### 2. Community and Downloads stats show "—" with no numbers
 - **Location:** Hero section, Problem section, Properties section (3 places each)
-- **Cause:** Stats are fetched from GitHub API (`agbusiness195/stele`) and npm (`@kova/core`). Either the repo/package doesn't exist, is private, or the fetch fails.
+- **Cause:** Stats are fetched from GitHub API (`agbusiness195/stele`) and npm (`@nobulex/core`). Either the repo/package doesn't exist, is private, or the fetch fails.
 - **Options:**
   - **A)** Put real numbers once the package is published and repo is public
   - **B)** Remove the Community and Downloads stat blocks entirely until you have real data
@@ -32,8 +32,8 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 
 ## Needs content (currently empty or placeholder)
 
-### 3. `images/kova-logo.png`
-- **Status:** ✅ **EXISTS** — File is present at `images/kova-logo.png` (72KB)
+### 3. `images/nobulex-logo.png`
+- **Status:** ✅ **EXISTS** — File is present at `images/nobulex-logo.png` (72KB)
 - **Also used:** Header logo on all pages, `og:image` meta tag
 - **Action:** None needed — verify it loads correctly in production
 
@@ -69,7 +69,7 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 ## Should improve before launch
 
 ### 9. Manifesto quote link
-- Quote says "THE KOVA MANIFESTO" and links to `manifesto.html`
+- Quote says "THE Nobulex MANIFESTO" and links to `manifesto.html`
 - **Status:** ✅ `manifesto.html` exists — no fix needed
 
 ### 10. "Join developers building the trust layer" — no way to join
@@ -83,10 +83,10 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 
 ### 11. Enterprise contact feels informal
 - **Location:** Get Started section — "We'll respond within 48 hours" links to GitHub Discussions
-- **Suggestion:** Add a dedicated enterprise contact (e.g. `enterprise@usekova.dev` or a Calendly link) for a more professional feel
+- **Suggestion:** Add a dedicated enterprise contact (e.g. `enterprise@nobulex.dev` or a Calendly link) for a more professional feel
 
 ### 12. No Twitter/X link
-- **Issue:** No social link to Kova's X account
+- **Issue:** No social link to Nobulex's X account
 - **Suggestion:** Add X/Twitter icon + link in footer or header
 
 ### 13. No email or newsletter signup
@@ -97,7 +97,7 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 
 ## Nice to have (post-launch)
 
-- Real download numbers from npm (requires `@usekova/core` to be published)
+- Real download numbers from npm (requires `@nobulex/core` to be published)
 - GitHub star count (requires public repo)
 - Changelog or blog section
 - Interactive demo
@@ -110,8 +110,8 @@ Generated from codebase analysis. Use this as a pre-launch checklist.
 |------|------|
 | Package name in code | `index.html`, `docs/quickstart.html`, `main.js` |
 | Stats elements | `index.html` — `#hero-github-stars`, `#hero-npm-downloads`, `#github-stars`, `#npm-downloads`, `#stats-github-stars`, `#stats-npm-downloads` |
-| Logo | `images/kova-logo.png` ✅ |
+| Logo | `images/nobulex-logo.png` ✅ |
 | Hero video | `videos/hero.mp4` ❌ (fallback in `main.js`) |
 | SPEC link | `index.html`, footer, `spec.html` |
 | GitHub repo | `agbusiness195/stele` |
-| NPM package (current) | `@kova/core` → change to `@usekova/core` |
+| NPM package (current) | `@nobulex/core` → change to `@nobulex/core` |

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://usekova.dev/sitemap.xml
+Sitemap: https://nobulex.dev/sitemap.xml

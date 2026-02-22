@@ -1,4 +1,4 @@
-# Deploying Kova Website
+# Deploying Nobulex Website
 
 ## Quick deploy
 
@@ -26,7 +26,7 @@ Without this, the AI help chat (?) will show fallback links instead of answering
 
 ### 2. Domain (optional)
 
-If using a custom domain (e.g. `usekova.dev`):
+If using a custom domain (e.g. `nobulex.dev`):
 
 1. Add domain in Vercel → Project → Settings → Domains
 2. Update these files with your domain:

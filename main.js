@@ -1,4 +1,4 @@
-/* Kova — main.js */
+/* Nobulex — main.js */
 
 (function () {
   'use strict';
@@ -97,7 +97,7 @@
 
   /* ——— Live stats (GitHub stars, npm downloads) ——— */
   const GITHUB_REPO = 'agbusiness195/stele';
-  const NPM_PACKAGE = '@usekova/sdk';
+  const NPM_PACKAGE = '@nobulex/sdk';
 
   function formatNum(n) {
     if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
@@ -172,7 +172,7 @@
     function addFriendlyLinks() {
       const div = document.createElement('div');
       div.className = 'help-widget__msg help-widget__msg--assistant';
-      div.innerHTML = '<p><a href="#problem">What is Kova</a> · <a href="#manifesto">Why it matters</a> · <a href="eu-ai-act.html">EU compliance guide</a> · <a href="manifesto.html">Manifesto</a></p>';
+      div.innerHTML = '<p><a href="#problem">What is Nobulex</a> · <a href="#manifesto">Why it matters</a> · <a href="eu-ai-act.html">EU compliance guide</a> · <a href="manifesto.html">Manifesto</a></p>';
       helpMessages.appendChild(div);
       helpMessages.scrollTop = helpMessages.scrollHeight;
     }
@@ -190,7 +190,7 @@
       setHint('Thinking…');
 
       try {
-        const apiUrl = window.KOVA_API_URL || '/api/chat';
+        const apiUrl = window.NOBULEX_API_URL || '/api/chat';
         const res = await fetch(apiUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

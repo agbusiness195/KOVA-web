@@ -1,4 +1,4 @@
-/* Vercel serverless function — AI chat for Kova help (Groq = free) */
+/* Vercel serverless function — AI chat for Nobulex help (Groq = free) */
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -27,16 +27,16 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'messages array required' });
   }
 
-  const systemPrompt = `You are a helpful assistant for Kova (usekova.dev), the trust layer for the agent economy. Kova lets AI agents declare what they will do, monitors their behavior, and lets anyone verify compliance without seeing how the agent works.
+  const systemPrompt = `You are a helpful assistant for Nobulex (nobulex.dev), the trust layer for the agent economy. Nobulex lets AI agents declare what they will do, monitors their behavior, and lets anyone verify compliance without seeing how the agent works.
 
-Key facts about Kova:
+Key facts about Nobulex:
 - Free, open source, MIT licensed
-- Three steps: Declare (agents state rules), Monitor (Kova watches behavior), Prove (anyone can verify)
+- Three steps: Declare (agents state rules), Monitor (Nobulex watches behavior), Prove (anyone can verify)
 - Maps to EU AI Act requirements (identity, constraints, audit trails, third-party verification)
 - For developers, enterprises, and regulators
 - Neutral, cross-platform, open protocol
 
-Answer questions about Kova in plain language. Be concise. If someone asks about compliance, point them to the EU AI Act guide. If they're non-technical, avoid jargon.`;
+Answer questions about Nobulex in plain language. Be concise. If someone asks about compliance, point them to the EU AI Act guide. If they're non-technical, avoid jargon.`;
 
   const apiUrl = useGroq ? 'https://api.groq.com/openai/v1/chat/completions' : 'https://api.openai.com/v1/chat/completions';
   const model = useGroq ? (process.env.GROQ_MODEL || 'llama-3.1-8b-instant') : 'gpt-4o-mini';

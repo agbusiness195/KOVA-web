@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kova — The trust layer for the agent economy</title>
+  <title>Nobulex — The trust layer for the agent economy</title>
   <meta name="description" content="A protocol that makes honesty the only rational strategy for any autonomous system. Carved in stone. Verified in code.">
-  <meta property="og:title" content="Kova — The trust layer for the agent economy">
+  <meta property="og:title" content="Nobulex — The trust layer for the agent economy">
   <meta property="og:description" content="Honesty as the only rational strategy. Verifiable commitments for every AI agent. Open source.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://usekova.dev/images/kova-logo.png">
-  <meta property="og:url" content="https://usekova.dev/">
+  <meta property="og:image" content="https://nobulex.dev/images/nobulex-logo.png">
+  <meta property="og:url" content="https://nobulex.dev/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kova — The trust layer for the agent economy">
+  <meta name="twitter:title" content="Nobulex — The trust layer for the agent economy">
   <meta name="twitter:description" content="Verifiable commitments for every AI agent. Open source.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" type="image/png" href="/images/favicon-k-trimmed.png">
@@ -26,7 +26,7 @@
   <a href="#main" class="skip-link">Skip to content</a>
   <header class="header" data-animate="header">
     <div class="header__top">
-      <a href="index.html" class="header__logo" data-magnetic aria-label="Kova home"><img src="images/kova-logo.png" alt="Kova" class="header__logo-img"></a>
+      <a href="index.html" class="header__logo" data-magnetic aria-label="Nobulex home"><img src="images/nobulex-logo.png" alt="Nobulex" class="header__logo-img"></a>
       <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
@@ -39,7 +39,7 @@
         <span aria-hidden="true">×</span>
       </button>
       <div class="header__links">
-        <a href="#problem">What is Kova</a>
+        <a href="#problem">What is Nobulex</a>
         <a href="#trust">Trust System</a>
         <a href="#manifesto">Why it matters</a>
         <a href="#regulatory">Compliance</a>
@@ -63,7 +63,7 @@
           <span class="hero__line" data-split="words">Trust for AI agents</span>
           <span class="hero__line hero__line--accent" data-split="words">that anyone can verify</span>
         </h1>
-        <p class="hero__stats-desc" data-reveal>AI agents that book flights, manage money, and make decisions need to prove they do what they promise. Kova makes that possible — for developers, enterprises, and regulators.</p>
+        <p class="hero__stats-desc" data-reveal>AI agents that book flights, manage money, and make decisions need to prove they do what they promise. Nobulex makes that possible — for developers, enterprises, and regulators.</p>
         <p class="hero__social-proof" data-reveal>Join developers building the trust layer for the agent economy</p>
         <div class="hero__join" data-reveal>
           <a href="https://github.com/agbusiness195/stele/discussions" class="btn btn--ghost btn--small" rel="noopener noreferrer">GitHub Discussions</a>
@@ -94,7 +94,7 @@
       <p class="section__label section__label--center" data-reveal>THE PROBLEM</p>
       <h2 class="problem__title" data-reveal>AI agents that no one can verify</h2>
       <div class="problem__content" data-reveal>
-        <p>AI agents will manage money, make decisions, and sign contracts — but today there's no way to prove they do what they promise. No accountability. No trust. Every day without verifiable covenants is a day of unaccountable risk. Kova fixes that.</p>
+        <p>AI agents will manage money, make decisions, and sign contracts — but today there's no way to prove they do what they promise. No accountability. No trust. Every day without verifiable covenants is a day of unaccountable risk. Nobulex fixes that.</p>
       </div>
       <div class="problem__stats" data-reveal>
         <div class="problem__stat"><span class="problem__stat-val" id="github-stars">—</span><span class="problem__stat-lbl">Community</span></div>
@@ -119,7 +119,7 @@
         <article class="protocol__card protocol__card--2 protocol__card--up" data-reveal>
           <span class="protocol__num">02</span>
           <h3>Monitor</h3>
-          <p>Kova watches what agents do. If they break the rules, it stops them or records the violation.</p>
+          <p>Nobulex watches what agents do. If they break the rules, it stops them or records the violation.</p>
         </article>
         <article class="protocol__card protocol__card--3" data-reveal>
           <span class="protocol__num">03</span>
@@ -137,18 +137,18 @@
       <div class="section__content">
       <p class="section__label" data-reveal>FOR DEVELOPERS</p>
       <h2 class="code__title" data-reveal>Add accountability in minutes</h2>
-      <p class="code__intro" data-reveal>If you build AI agents, add KOVA to make them verifiable. Everyone else: KOVA lets you verify agents do what they promise — no coding required. See the <a href="#regulatory">Compliance</a> section or <a href="eu-ai-act.html">EU AI Act guide</a>.</p>
+      <p class="code__intro" data-reveal>If you build AI agents, add NOBULEX to make them verifiable. Everyone else: NOBULEX lets you verify agents do what they promise — no coding required. See the <a href="#regulatory">Compliance</a> section or <a href="eu-ai-act.html">EU AI Act guide</a>.</p>
       <div class="code-block code-block--wide" data-reveal>
         <span class="code-block__lang">JAVASCRIPT</span>
         <button type="button" class="code-block__copy" aria-label="Copy code">Copy</button>
-        <pre><code><span class="token-key">const</span> { protect } = <span class="token-key">require</span>(<span class="token-str">'@usekova/sdk'</span>);
+        <pre><code><span class="token-key">const</span> { protect } = <span class="token-key">require</span>(<span class="token-str">'@nobulex/sdk'</span>);
 
 <span class="token-key">const</span> agent = <span class="token-key">await</span> protect({
   name: <span class="token-str">'my-agent'</span>,
   rules: [<span class="token-str">'no-data-leak'</span>, <span class="token-str">'read-only'</span>]
 });</code></pre>
         <div class="code-block__footer">
-          <button type="button" class="npm-copy" data-copy="npm install @usekova/sdk" aria-label="Copy npm command">npm install @usekova/sdk</button>
+          <button type="button" class="npm-copy" data-copy="npm install @nobulex/sdk" aria-label="Copy npm command">npm install @nobulex/sdk</button>
           <span class="code-block__meta">MIT Licensed</span>
         </div>
       </div>
@@ -179,7 +179,7 @@
       <div class="section__content">
       <p class="section__label section__label--center" data-reveal>TRUST SYSTEM</p>
       <h2 class="trust__title" data-reveal>Trust is mathematics, <em>not reputation</em></h2>
-      <p class="trust__intro" data-reveal>Kova doesn't guess — it calculates. Trust is bounded by collateralization: an agent's trust can never exceed its staked value. Formal trust algebra enables composition, intersection, negation, and tensor operations across trust profiles. Five-dimensional scoring replaces crude single-number ratings. Adversarial trust equilibrium ensures the system converges on evolutionarily stable strategies — not just Nash equilibria that collapse under pressure. Trust entanglement enables sublinear network verification: verify one node, constrain thousands.</p>
+      <p class="trust__intro" data-reveal>Nobulex doesn't guess — it calculates. Trust is bounded by collateralization: an agent's trust can never exceed its staked value. Formal trust algebra enables composition, intersection, negation, and tensor operations across trust profiles. Five-dimensional scoring replaces crude single-number ratings. Adversarial trust equilibrium ensures the system converges on evolutionarily stable strategies — not just Nash equilibria that collapse under pressure. Trust entanglement enables sublinear network verification: verify one node, constrain thousands.</p>
       <div class="trust-grid" data-reveal>
         <div class="trust__cell"><span class="trust__val">T ≤ S</span><span class="trust__lbl">Trust ≤ Staked Value</span></div>
         <div class="trust__cell"><span class="trust__val">5D</span><span class="trust__lbl">Multidimensional Profile</span></div>
@@ -203,7 +203,7 @@
       <div class="section__content">
       <p class="section__label section__label--center" data-reveal>ECONOMICS</p>
       <h2 class="economics__title" data-reveal>Trust and verification built in</h2>
-      <p class="economics__intro" data-reveal>Kova is free and open. Value flows with the economy it secures.</p>
+      <p class="economics__intro" data-reveal>Nobulex is free and open. Value flows with the economy it secures.</p>
       <p class="section__label section__label--center" data-reveal style="margin-top: 3rem;">Beyond The Rail</p>
       <div class="economics__revenue-grid" data-reveal>
         <div class="economics__revenue-row"><span class="economics__revenue-stream">Trust Futures</span><span class="economics__revenue-model">Financial instruments on trust trajectories (CME Group model)</span><span class="economics__revenue-scale">Derivatives market</span></div>
@@ -218,7 +218,7 @@
 
     <section class="section section--stats" data-section="stats">
       <p class="section__label section__label--center" data-reveal>PROPERTIES</p>
-      <div class="stats stats--kova" data-reveal>
+      <div class="stats stats--nobulex" data-reveal>
         <div class="stat"><span class="stat__val" id="stats-github-stars">—</span><span class="stat__lbl">Community</span></div>
         <div class="stat"><span class="stat__val" id="stats-npm-downloads">—</span><span class="stat__lbl">Downloads</span></div>
         <div class="stat"><span class="stat__val">Private</span><span class="stat__lbl">Verification</span></div>
@@ -239,7 +239,7 @@
         <span class="eu-countdown__timer" id="eu-countdown">164 days remaining</span>
       </div>
       <div class="eu-content" data-reveal>
-        <p>By August 2026, Europe requires AI systems to be transparent and accountable. Kova maps to identity, rules, audit trails, and third-party verification. <a href="eu-ai-act.html">See how Kova meets EU AI Act requirements →</a></p>
+        <p>By August 2026, Europe requires AI systems to be transparent and accountable. Nobulex maps to identity, rules, audit trails, and third-party verification. <a href="eu-ai-act.html">See how Nobulex meets EU AI Act requirements →</a></p>
       </div>
       </div>
     </section>
@@ -251,15 +251,15 @@
       <div class="adoption-grid" data-reveal>
         <article class="adoption__card">
           <h4>Regulatory Wedge</h4>
-          <p>EU AI Act compliance. August 2026 deadline creates forced adoption. Enterprises need behavioral transparency and audit trails for autonomous agents. Kova is the compliance layer.</p>
+          <p>EU AI Act compliance. August 2026 deadline creates forced adoption. Enterprises need behavioral transparency and audit trails for autonomous agents. Nobulex is the compliance layer.</p>
         </article>
         <article class="adoption__card">
           <h4>Internal Governance Wedge</h4>
-          <p>Enterprise fleet management. Companies don't need a network to use Kova internally. Deploy covenants across your own agent infrastructure. Value from day one, zero external dependencies.</p>
+          <p>Enterprise fleet management. Companies don't need a network to use Nobulex internally. Deploy covenants across your own agent infrastructure. Value from day one, zero external dependencies.</p>
         </article>
         <article class="adoption__card">
           <h4>MCP Certification Wedge</h4>
-          <p>Model Context Protocol trust layer. As MCP becomes the standard for agent-to-tool communication, Kova becomes the certification layer that verifies agent identity and behavioral compliance within the ecosystem.</p>
+          <p>Model Context Protocol trust layer. As MCP becomes the standard for agent-to-tool communication, Nobulex becomes the certification layer that verifies agent identity and behavioral compliance within the ecosystem.</p>
         </article>
       </div>
       </div>
@@ -267,9 +267,9 @@
 
     <section class="section section--why section--alt" data-section="why">
       <div class="section__content">
-      <p class="section__label section__label--center" data-reveal>WHY KOVA</p>
+      <p class="section__label section__label--center" data-reveal>WHY NOBULEX</p>
       <h2 class="why__title" data-reveal>Neutral. Cross-platform. Open.</h2>
-      <p class="why__intro" data-reveal>Other solutions are tied to one company, one blockchain, or one use case. Kova works everywhere. Free to use. Anyone can verify.</p>
+      <p class="why__intro" data-reveal>Other solutions are tied to one company, one blockchain, or one use case. Nobulex works everywhere. Free to use. Anyone can verify.</p>
       <div class="why__differentiators" data-reveal>
         <div class="why__diff"><span class="why__diff-label">Neutral</span><span class="why__diff-desc">No vendor lock-in. No single chain or platform.</span></div>
         <div class="why__diff"><span class="why__diff-label">Cross-platform</span><span class="why__diff-desc">Works with any agent, any protocol, any stack.</span></div>
@@ -282,7 +282,7 @@
       <div class="section__content">
       <div class="manifesto__block" data-reveal>
         <blockquote class="manifesto">"If we can't hold AI agents accountable, we can't trust them. If we can't trust them, they can't participate in the economy. The question is whether we build accountability before or after the first catastrophic failure."</blockquote>
-        <cite class="manifesto__cite">— THE KOVA MANIFESTO</cite>
+        <cite class="manifesto__cite">— THE NOBULEX MANIFESTO</cite>
         <a href="manifesto.html" class="manifesto__link" rel="noopener noreferrer">Read the manifesto →</a>
       </div>
       </div>
@@ -292,7 +292,7 @@
       <p class="section__label section__label--center" data-reveal>GET STARTED</p>
       <div class="get-started__grid" data-reveal>
         <div class="get-started__card">
-          <h4>I'm new to Kova</h4>
+          <h4>I'm new to Nobulex</h4>
           <h3>Learn first</h3>
           <p>Read the manifesto or see how it works. No coding required.</p>
           <a href="manifesto.html" class="btn btn--ghost btn--small" rel="noopener noreferrer">Read the manifesto →</a>
@@ -300,12 +300,12 @@
         <div class="get-started__card">
           <h4>I'm a compliance officer</h4>
           <h3>EU AI Act</h3>
-          <p>See how Kova maps to regulatory requirements. Plain language.</p>
+          <p>See how Nobulex maps to regulatory requirements. Plain language.</p>
           <a href="eu-ai-act.html" class="btn btn--ghost btn--small" rel="noopener noreferrer">Compliance guide →</a>
         </div>
         <div class="get-started__card">
           <h4>I'm a developer</h4>
-          <h3>Build with Kova</h3>
+          <h3>Build with Nobulex</h3>
           <p>Install the SDK. Add accountability in minutes. MIT licensed.</p>
           <a href="docs/quickstart.html" class="btn btn--ghost btn--small">Quickstart →</a>
         </div>
@@ -329,13 +329,13 @@
 
   <footer class="footer" data-section="footer">
     <div class="footer__brand">
-      <h3 class="footer__logo">KOVA</h3>
+      <h3 class="footer__logo">NOBULEX</h3>
     </div>
     <nav class="footer__nav">
       <a href="https://github.com/agbusiness195/stele" rel="noopener noreferrer">GITHUB</a>
       <a href="https://github.com/agbusiness195/stele/blob/main/SPEC.md" rel="noopener noreferrer">SPEC</a>
       <a href="https://github.com/agbusiness195/stele/discussions" rel="noopener noreferrer">COMMUNITY</a>
-      <a href="https://x.com/kovaprotocol" rel="noopener noreferrer">X</a>
+      <a href="https://x.com/nobulex" rel="noopener noreferrer">X</a>
       <a href="manifesto.html">MANIFESTO</a>
       <a href="eu-ai-act.html">EU AI ACT</a>
     </nav>
@@ -344,7 +344,7 @@
   <div class="scroll-bar" aria-hidden="true"></div>
 
   <!-- AI Help — corner widget for clarification and depth -->
-  <button type="button" class="help-widget__toggle" id="help-toggle" aria-label="Get help understanding Kova" aria-expanded="false">
+  <button type="button" class="help-widget__toggle" id="help-toggle" aria-label="Get help understanding Nobulex" aria-expanded="false">
     <span class="help-widget__icon" aria-hidden="true">?</span>
   </button>
   <div class="help-widget__panel" id="help-panel" aria-hidden="true">
@@ -354,7 +354,7 @@
     </div>
     <p class="help-widget__intro">Not sure where to start? Ask any question. We'll answer in plain language — no jargon.</p>
     <div class="help-widget__links">
-      <a href="#problem">What is Kova</a>
+      <a href="#problem">What is Nobulex</a>
       <a href="#trust">Trust System</a>
       <a href="#manifesto">Why it matters</a>
       <a href="#regulatory">EU compliance</a>
@@ -364,7 +364,7 @@
     <div class="help-widget__chat">
       <div class="help-widget__messages" id="help-messages"></div>
       <div class="help-widget__input-wrap">
-        <input type="text" id="help-query" placeholder="e.g. What is Kova, in simple terms?" autocomplete="off">
+        <input type="text" id="help-query" placeholder="e.g. What is Nobulex, in simple terms?" autocomplete="off">
         <button type="button" class="help-widget__ask" id="help-ask" aria-label="Send">→</button>
       </div>
       <p class="help-widget__hint" id="help-hint">Type your question and press Enter</p>
@@ -373,7 +373,7 @@
 
   <script>
     if (location.protocol === 'file:' || (location.port && location.port !== '3333')) {
-      window.KOVA_API_URL = 'http://localhost:3333/api/chat';
+      window.NOBULEX_API_URL = 'http://localhost:3333/api/chat';
     }
   </script>
   <script src="main.js"></script>

@@ -34,7 +34,7 @@ async function handleApiChat(body) {
     return { status: 400, body: { error: 'messages required' } };
   }
 
-  const systemPrompt = `You are a helpful assistant for Kova, the trust layer for the agent economy. Answer about Kova in plain language. Be concise.`;
+  const systemPrompt = `You are a helpful assistant for Nobulex, the trust layer for the agent economy. Answer about Nobulex in plain language. Be concise.`;
 
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
@@ -161,5 +161,5 @@ function loadEnv() {
 
 loadEnv();
 server.listen(PORT, () => {
-  console.log(`\n  Kova dev server: http://localhost:${PORT}\n  Chat API: http://localhost:${PORT}/api/chat\n`);
+  console.log(`\n  Nobulex dev server: http://localhost:${PORT}\n  Chat API: http://localhost:${PORT}/api/chat\n`);
 });

@@ -1,7 +1,7 @@
-# KOVA-web Project Structure
+# nobulex-web Project Structure
 
 ```
-KOVA-web/
+nobulex-web/
 ├── index.html          # Homepage
 ├── manifesto.html      # The Uncovenanted Agent Problem
 ├── eu-ai-act.html      # EU AI Act compliance guide
@@ -25,7 +25,7 @@ KOVA-web/
 │   └── quickstart.html # Developer quickstart
 │
 ├── images/
-│   ├── kova-logo.png   # Brand logo (header)
+│   ├── nobulex-logo.png   # Brand logo (header)
 │   ├── hero-visual.png # Hero section background
 │   ├── favicon.svg
 │   └── *.svg           # Section illustrations
@@ -42,5 +42,5 @@ KOVA-web/
 ## Key Paths
 
 - **Hero background:** `images/hero-visual.png` (fallback when no video)
-- **Logo:** `images/kova-logo.png`
+- **Logo:** `images/nobulex-logo.png`
 - **AI chat API:** `POST /api/chat` (needs `GROQ_API_KEY` in Vercel env)
